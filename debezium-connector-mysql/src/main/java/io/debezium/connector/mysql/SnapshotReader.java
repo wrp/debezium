@@ -543,7 +543,7 @@ public class SnapshotReader extends AbstractReader {
                                             }
                                             if (rowNum % 10_000 == 0) {
                                                 long stop = clock.currentTimeInMillis();
-                                                logger.info("Step {}: - {} of {} rows scanned from table '{}' after {}",
+                                                logger.info("Step {}: - {} of approx. {} rows scanned from table '{}' after {}",
                                                             stepNum, rowNum, rowCountStr, tableId, Strings.duration(stop - start));
                                             }
                                         }
